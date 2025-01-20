@@ -63,6 +63,30 @@ h6 {
 .card-footer:last-child {
   border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
 }
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Leggero ingrandimento */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+}
+.card-footer .feather-bookmark {
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-footer .feather-bookmark:hover {
+  fill: #754FFE; /* Colore del bordo o un colore desiderato */
+}
+.card-title {
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title {
+  color: #754FFE; /* Cambia il colore del titolo */
+}
+
 
 /* UTILITIES */
 .font-sm {
